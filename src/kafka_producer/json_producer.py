@@ -24,7 +24,7 @@ def delivery_report(err, msg):
 
 
 
-def product_data_using_file(topic,file_path):
+def produce_data_using_file(topic,file_path):
     logging.info(f"Topic: {topic} file_path:{file_path}")
     schema_str = Generic.get_schema_to_produce_consume_data(file_path=file_path)
     schema_registry_conf = schema_config()
